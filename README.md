@@ -7,7 +7,7 @@ It includes a Makefile for common development and build tasks, including cross-c
 
 - Simple HTTP server serving static files.
 - Serves `web/index.html` at the root path (`/`).
-- Listens on port 8080 by default, configurable via the `PORT` environment variable.
+- Listens on port 3000 by default, configurable via the `PORT` environment variable.
 - Makefile for easy building, running, and development.
 - Supports building for Linux, macOS (Darwin), and Windows for `amd64` and `arm64` architectures.
 - Hot reloading for development using [Air](https://github.com/air-verse/air).
@@ -45,7 +45,7 @@ make dev
 
 This command will first check if the `air` tool is installed. If not, it will attempt to install it using `go install github.com/air-verse/air@latest`. Ensure that your `$GOPATH/bin` is in your system's `PATH`.
 
-The server will start on port 8080 (or the port specified in `.air.toml`). Note that `make dev` always runs natively on your current system.
+The server will start on port 3000 (or the port specified in `.air.toml`). Note that `make dev` always runs natively on your current system.
 
 ### Building
 
