@@ -1,6 +1,6 @@
 # Go Web App Boilerplate
 
-This is a basic Go web application boilerplate that serves a simple HTML page.
+This is a Go web application boilerplate that serves a simple HTML page.
 It includes a Makefile for common development and build tasks, including cross-compilation and hot-reloading.
 
 ## Features
