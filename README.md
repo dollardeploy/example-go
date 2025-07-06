@@ -5,7 +5,7 @@ It includes a Makefile for common development and build tasks, including cross-c
 
 ## Features
 
-- Simple HTTP server serving static files.
+- Starts HTTP server serving static files.
 - Serves `web/index.html` at the root path (`/`).
 - Listens on port 3000 by default, configurable via the `PORT` environment variable.
 - Makefile for easy building, running, and development.
