@@ -14,7 +14,6 @@ This is a Go web application boilerplate that serves a simple HTML page. It incl
 
 - Go (version 1.18 or later recommended)
 - Make
-- (Optional, for `make dev`) Access to install Go packages (`go install ...`)
 
 ## Getting Started
 
