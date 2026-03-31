@@ -77,7 +77,7 @@ The Makefile provides targets to build the application for different Operating S
   ```bash
   make build-linux-amd64
   make build-linux-arm64
-  make build-darwin-amd64  # macOS Intel
+  make build-darwin-amd64  # macOS Intel x86
   make build-darwin-arm64  # macOS Apple Silicon
   make build-windows-amd64
   make build-windows-arm64
