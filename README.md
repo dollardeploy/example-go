@@ -12,7 +12,7 @@ This is a Go web application boilerplate that serves a simple HTML page. It incl
 
 ## Prerequisites
 
-- Go (version 1.18 or later recommended)
+- Go (version 1.18 or later)
 - Make
 
 ## Getting Started
