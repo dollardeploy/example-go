@@ -49,7 +49,7 @@ The server will start on port 3000 (or the port specified in `.air.toml`). Note 
 
 The Makefile provides targets to build the application for different Operating Systems (`GOOS`) and Architectures (`ARCH`). By default, `make build` builds for your current system.
 
-- **Build for your current system (Host OS/ARCH):**
+- **Build for your current system (will autodetect Host OS/ARCH):**
 
   ```bash
   make build
