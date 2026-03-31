@@ -83,7 +83,7 @@ The Makefile provides targets to build the application for different Operating S
   make build-windows-arm64
   ```
 
-  **Note on CGO:** CGO is automatically disabled (`CGO_ENABLED=0`) when cross-compiling (when `GOOS`/`ARCH` is different from your host system) to avoid potential compilation issues. It's enabled only for native builds.
+**Note on CGO:** CGO is automatically disabled (`CGO_ENABLED=0`) when cross-compiling (when `GOOS`/`ARCH` is different from your host system) to avoid potential compilation issues. It's enabled only for native builds.
 
 ### Running the Application
 
