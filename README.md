@@ -4,8 +4,7 @@ This is a Go web application boilerplate that serves a simple HTML page. It incl
 
 ## Features
 
-- Starts HTTP server serving static files.
-- Serves `web/index.html` at the root path (`/`).
+- Serves static `web/index.html` at the root path (`/`).
 - Listens on port 3000 by default, configurable via the `PORT` environment variable.
 - Makefile for easy building, running, and development.
 - Supports building for Linux, macOS (Darwin), and Windows for `amd64` and `arm64` architectures.
