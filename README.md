@@ -4,7 +4,11 @@ This is a Go web application boilerplate that serves a simple HTML page. It incl
 
 ## Features
 
-- Serves static `web/index.html` at the root path (`/`).
+- Home page written in Go with [gomponents](https://www.gomponents.com) (type-safe HTML components, no template files or codegen).
+- Live server stats (Go version, uptime, goroutines, memory) refreshed with [htmx](https://htmx.org) from a `/fragments/facts` HTML fragment.
+- Dithered rocket-launch animation rendered server-side into an animated GIF (light and dark variants) with the standard library.
+- `/api/cron` endpoint for DollarDeploy cron jobs, authenticated with `CRON_SECRET`.
+- Single self-contained binary: `web/static` (CSS, htmx, fonts) is embedded with `go:embed`.
 - Listens on port 3000 by default, configurable via the `PORT` environment variable.
 - Makefile for easy building, running, and development.
 - Supports building for Linux, macOS (Darwin), and Windows for `amd64` and `arm64` architectures.
@@ -134,8 +138,12 @@ make clean
 ├── Makefile        # Defines build, run, and development tasks
 ├── go.mod          # Go module definition (created by 'make init')
 ├── go.sum          # Go module checksums (created by 'make init')
-├── main.go         # Main application source code
-├── web/
-│   └── index.html  # Simple HTML page served by the application
+├── main.go         # Server, routes, embedded assets, /api/cron
+├── page.go         # Home page and live server facts (gomponents + htmx)
+├── launch.go       # Dithered rocket animation rendered to an animated GIF
+├── web/static/     # Embedded into the binary
+│   ├── app.css     # Page styles
+│   ├── htmx.min.js # htmx 2.0.4
+│   └── fonts/      # Redaction 35 (SIL OFL)
 └── README.md       # This file
 ```
